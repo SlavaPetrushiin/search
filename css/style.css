@@ -1,0 +1,36 @@
+.hide{
+    display: none;
+}
+
+.columns{
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.search{
+    display: block;
+    width: 100%;
+    padding: 27px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.img {
+    max-width: 150px;
+    margin: 10px auto;
+
+}
+
+.image{
+    display: block;
+    max-width: 100%;
+}
+
+.good{
+    margin: 10px 0;
+    font-weight: 700;
+}
+

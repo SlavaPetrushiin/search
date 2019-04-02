@@ -4,17 +4,17 @@ document.querySelector('.search').oninput = function(){
     if (searchGood != ""){
         goods.forEach(function(elem){
             if (elem.innerText.toLowerCase().search(searchGood) == -1){
-                elem.classList.add('hide');
+                elem.parentElement.classList.add('hide');
                 elem.innerHTML = elem.innerText;
             }else{
-                elem.classList.remove('hide');
+                elem.parentElement.classList.remove('hide');
                 let str = elem.innerText;
                 elem.innerHTML = illumination(str, elem.innerText.toLowerCase().search(searchGood), searchGood.length)
             }    
         });    
     }else{
         goods.forEach(function(elem){
-            elem.classList.remove('hide');
+            elem.parentElement.classList.remove('hide');
             elem.innerHTML = elem.innerText;
         });         
     }
